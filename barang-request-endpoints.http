@@ -1,0 +1,30 @@
+#Get all data barang
+GET localhost:8080/api/v1/barang
+
+###
+#get data barang by Id
+GET localhost:8080/api/v1/barang/1
+
+###
+# input data barang (nama_barang,harga_barang)
+POST localhost:8080/api/v1/barang
+Content-Type: application/json
+
+{
+  "nama_barang" : "Figure Yae Miko",
+  "harga_barang" : "3000000"
+}
+
+###
+# update data barang (nama_barang,harga_barang) by id
+PUT localhost:8080/api/v1/barang/2
+Content-Type: application/json
+
+{
+  "nama_barang" : "Nendoroid Sakura",
+  "harga_barang" : "750000"
+}
+
+###
+#delete barang by id
+DELETE localhost:8080/api/v1/books/3
